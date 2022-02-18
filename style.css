@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: #f4dbff;
+}
+
+.page-container, .title, .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    flex-direction: column;
+}
+
+.buttons {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 95vw;
+}
+
+.button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
+    padding: 3em 1em;
+    color:#FFFFFF;
+    transition: all 0.1s;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button:active {
+    transform: scale(0.85);
+}
+
+.game-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#score1, #score2 {
+    text-align: center;
+    transition: all 0.1s;
+}
+
+/* adding margin here so that when the JS adds the 
+round result it doesn't push the elements below it down a bit */
+.round-result {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.game-scores {
+    display: flex;
+    align-items: center;
+    gap: 500px;
+}
+
+.player-score, .computer-score {
+    display: flex;
+    flex-direction: column;
+}

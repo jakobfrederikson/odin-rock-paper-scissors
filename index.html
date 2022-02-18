@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./game.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./game.js" defer></script>
 </head>
 <body>
-    <h1>Odin Project Rock Paper Scissors JS Game</h1>
-    <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors" target="_blank">Link</a>
+    <div class="page-container">
+        <div class="title">
+            <h1>Odin Project Rock Paper Scissors JS Game</h1>
+            <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors" 
+            target="_blank">Link to assignment details (opens in a new tab)</a>
+        </div>
+
+        <div class="game-results">
+           <div class="round-result">
+            <h1>First to 5 wins</h1>
+               <h1 id="result-area-round-winner">Who won the round?</h1>
+               <h1 id="result-area">Round result: </h1>
+           </div>
+           <div class="game-scores">
+               <div class="player-score">
+                   <h2>Player score</h2>
+                   <h2 id="score1">0</h2>
+               </div>
+               <div class="computer-score">
+                   <h2>Computer score</h2>
+                   <h2 id="score2">0</h2>
+               </div>
+           </div>
+        </div>
+
+        <div class="buttons">
+            <button id="rock" class="button">Rock</button>
+            <button id="paper" class="button">Paper</button>
+            <button id="scissors" class="button">Scissors</button>
+        </div>
+    </div>   
 </body>
 </html>
